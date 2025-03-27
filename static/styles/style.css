@@ -1,0 +1,230 @@
+@import "media.css";
+body {
+    background: linear-gradient(45deg, #f7bf80, #fad0c4); 
+    min-height: 100vh
+
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fcf5ed; 
+    border: 2px solid #f0b1b1;
+    border-radius: 10px;
+    padding: 3px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(61, 41, 41, 0.1);
+}
+
+.log {
+    font-size: 15px;
+}
+
+.image {
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 5px;
+}
+
+.but {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: pink;
+    color: rgb(7, 7, 7);
+    font-size: 25px;
+    cursor: pointer;
+    border-width: 0.5px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #333;
+    text-decoration: none;
+}
+
+.but:hover {
+    background-color: #f08a46;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.warp{
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    width: 600px;
+    font-size: 30px;
+    display: block;
+    border-style: solid;
+    border-width: 0.5px;
+    padding-right: 20px;
+    margin-top: 70px;
+    margin-left: 50px;
+    justify-content: space-between;
+    background-color: #f1eeee;
+    border: 2px solid #f0b1b1;
+    border-radius: 10px;
+    padding: 3px 20px;
+    box-shadow: 0 4px 8px rgba(61, 41, 41, 0.1);
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 160px;
+    padding: 3px 20px;
+}
+
+.slider img {
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list {
+    display: block;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 20px;
+    margin-top: 70px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid #f0b1b1;
+    background-color: #f1eeeef6;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(61, 41, 41, 0.1);
+}
+
+.catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px; 
+    flex-wrap: wrap;
+
+}
+
+.catalog button {
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: rgb(201, 104, 120);
+    color: rgb(7, 7, 7);
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.catalog button:hover {
+    background-color: #fca139;
+}
+
+.list>p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.footer{
+    max-width: 1650px;
+    margin: 0 auto;
+}
+.contacts {
+    display: block;
+}
+
+.contacts>p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 50px;
+    color: rgb(165, 127, 133);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px; 
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.icons__link {
+    padding: 10px 10px;
+    border-radius: 45px;
+    background-color: rgba(201, 104, 120, 0.521);
+    color: rgb(104, 81, 85);
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #333;
+    text-decoration: none;
+}
+.icons__link:hover {
+    background-color: #fca13959;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.199); 
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.popup-content {
+    background-color: #fad0c4;
+    padding: 80px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
+

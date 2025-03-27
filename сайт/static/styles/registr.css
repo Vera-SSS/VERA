@@ -1,3 +1,4 @@
+@import "media.css";
 body {
     background: linear-gradient(45deg, #f7bf80, #fad0c4); 
     margin: 0;
@@ -9,7 +10,7 @@ body {
 
 .field {
     background-color: #fff;
-    padding: 50px;
+    padding: 70px 90px;
     border-radius: 8px;
     width: 300px;
     text-align: center;
@@ -19,28 +20,36 @@ body {
 }
 
 .field>h2 {
-    font-size: 40px;
+    font-size: 60px;
+}
+
+.field>p {
+    font-size: 20px;
 }
 
 input {
-    font-size: 20px;
-    padding: 10px ;
-    margin-bottom: 10px;
+    padding: 10px 20px;
     border: 2px solid #e0a0279c;
     border-radius: 4px;
+    text-align: center;
 }
 
 .button {
-    padding: 8px 50px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 50px;
     border-radius: 4px;
     background-color: rgba(238, 136, 40, 0.774);
     color: rgb(7, 7, 7);
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: 0.5px solid #333;
     text-decoration: none;
 }
+
 .button:hover {
     background-color: #f77d2c;
 }
@@ -51,7 +60,7 @@ input {
     border-radius: 4px;
     background-color: rgba(226, 142, 63, 0.774);
     color: rgb(58, 53, 53);
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: 0.5px solid #333;

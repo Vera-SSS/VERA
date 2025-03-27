@@ -1,3 +1,4 @@
+@import "media.css";
 body {
     background: linear-gradient(45deg, #f7bf80, #fad0c4); 
     min-height: 100vh
@@ -12,7 +13,7 @@ body {
     border: 2px solid #f0b1b1;
     border-radius: 10px;
     padding: 3px 20px;
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(61, 41, 41, 0.1);
 }
@@ -22,7 +23,7 @@ body {
 }
 
 .image {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     color: #333;
     margin-left: 5px;
@@ -33,7 +34,7 @@ body {
     border-radius: 30px;
     background-color: pink;
     color: rgb(7, 7, 7);
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
     border-width: 0.5px;
     transition: background-color 0.3s ease;
@@ -45,10 +46,21 @@ body {
     background-color: #f08a46;
 }
 
+.main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.warp{
+    display: flex;
+    align-items: center;
+}
+
 .description {
     width: 600px;
-    font-size: 25px;
+    font-size: 30px;
     display: block;
+    padding-right: 20px;
     margin-top: 70px;
     justify-content: space-between;
     background-color: #f1eeee;
@@ -56,6 +68,46 @@ body {
     border-radius: 10px;
     padding: 3px 20px;
     box-shadow: 0 4px 8px rgba(61, 41, 41, 0.1);
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 160px;
+    padding: 3px 20px;
+}
+
+.slider img {
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .record{
@@ -67,7 +119,7 @@ body {
 .record button{
     padding: 10px 70px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 35px;
     color: black;
     background-color: pink;
     cursor: pointer;
@@ -75,6 +127,11 @@ body {
 
 .record button:hover{
     background-color: #f08a46;
+}
+
+.footer {
+    max-width: 1650px;
+    margin: 0 auto;
 }
 
 .contacts {
@@ -111,3 +168,4 @@ body {
 .icons__link:hover {
     background-color: #fca13959;
 }
+

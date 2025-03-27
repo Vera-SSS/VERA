@@ -19,26 +19,40 @@
         </div>
         <a class="but" href="registracia.html">Вход/Регистрация</a>
     </header>
-    <main>
-        <div class="description">
+    <main class="main">
+        <div class="warp">
+           <div class="description">
         <p><span class="bold-text">Rabbit Teacher</span> — это онлайн-платформа для изучения английского, французкого, японского и итальянского языков. Мы предлагаем
             интерактивные курсы с нуля. Учитесь в удобное время с
             профессиональными преподавателями и носителями языка, практикуйте разговорную речь и погружайтесь в культуру
             стран. Гибкий график, доступ к материалам 24/7 и индивидуальный подход помогут вам достичь целей: будь то
             путешествия, карьера или экзамены. Начните с бесплатного пробного урока и откройте для себя мир без языковых
             границ с Rabbit Teacher!</p>
-    </div>
+        </div>
+        <div class="slider">
+            <img id="sliderImage" src="static/image/5408955515230352428.jpg" alt="Картинка" />
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div> 
+        </div>
     <div class="list">
         <p>Каталог курсов</p>
         <div class="catalog">
-            <button>Английский язык</button>
-            <button>Французкий язык</button>
-            <button>Японский язык</button>
-            <button>Итальянский язык</button>
+            <button onclick="showPopup()">Английский язык</button>
+            <button onclick="showPopup()">Французкий язык</button>
+            <button onclick="showPopup()">Японский язык</button>
+            <button onclick="showPopup()">Итальянский язык</button>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Для записи на курс нужно сначала войти в свой профиль!</p>
+            <img src="static/image/pngtree-cute-pink-rabbit-ear-headband-folded-ear-shape-png-image_7516079.png" alt="Логотип" width="250" height="210">
         </div>
     </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="contacts">
         <p>Контакты/Техническая поддержка:</p>
         <div class="icons">
@@ -48,6 +62,6 @@
         </div>
         </div>
     </footer>
-
+    <script src="static/scripts/script.js"></script>
 </body>
 </html>

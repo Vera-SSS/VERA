@@ -16,6 +16,11 @@ function changeImage(direction) {
     document.getElementById('sliderImage').src = images[currentIndex];
 }
 
+// * начало
+// * Пользователь нажимает на кнопки главной страницы "Английский язык" и др
+// * Если пользователь не зашел в своей профиль, то ему показывается окно "Для записи на курс нужно сначала войти в свой профиль!"
+// * конец
+
 function showPopup() {
     document.getElementById('popup').style.display = 'flex'; 
 }

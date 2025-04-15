@@ -31,14 +31,11 @@
                 <button class="prev" onclick="changeImage(-1)">&#10094;</button>
                 <button class="next" onclick="changeImage(1)">&#10095;</button>
             </div> 
-        </div>
-        
-    
+        </div> 
         <div class="record">
-            <button>Записаться на курс</button>
+            <button id="signupButton">Записаться на курс</button>
         </div>
-    </main>   
-    
+    </main>      
     <footer class="footer">
         <div class="contacts">
             <p>Контакты/Техническая поддержка:</p>
@@ -49,6 +46,12 @@
             </div>
             </div>
     </footer> 
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p>Вы записались на курс!</p>
+        </div>
+    </div>
     <script src="scripts/scripts_it.js"></script>
 </body>
 </html>

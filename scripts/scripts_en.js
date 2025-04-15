@@ -15,3 +15,28 @@ function changeImage(direction) {
     }
     document.getElementById('sliderImage_en').src = images[currentIndex];
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('signupModal');
+    const btn = document.getElementById('signupButton');
+    const span = document.querySelector('.close-modal');
+    
+    btn.onclick = function() {
+        modal.style.display = 'block';
+        
+        // Автоматическое закрытие через 3 секунды
+        setTimeout(function() {
+            modal.style.display = 'none';
+        }, 3000);
+    }
+    
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+});

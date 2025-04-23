@@ -6,17 +6,28 @@
     <title>Регистрация</title>
     <link rel="stylesheet" href="static/styles/registr.css">
     <link rel="stylesheet" href="static/styles/normalize.css">
+    <link rel="stylesheet" href="static/styles/animation.css">
+    <link rel="stylesheet" href="static/styles/preloader.css">
 </head>
 <body>
-   <header class="field">
-        <h2><span class="bold-text">Вход</span></h2>
-        <input type="text" placeholder="Почта" required>
-        <input type="text" placeholder="Пароль" required>
-        <a class="button" href="index2.html">Войти</a>
-        <p>Нет аккаунта? </p>
-        <p><a href="#">Зарегистрируйтесь</a></p>
-        <a class="home" href="index.html">Главная страница</a>
-   </header>
+    <div class="preloader">
+        <div class="preloader__spinner">
+            <div class="preloader__animation"></div>
+            <div class="preloader__percents">0%</div>
+        </div>
+    </div>
+    <div class="content">
+        <header class="field">
+            <h2><span class="bold-text">Вход</span></h2>
+            <input type="text" placeholder="Почта" required>
+            <input type="text" placeholder="Пароль" required>
+            <a class="button" href="index2.html">Войти</a>
+            <p>Нет аккаунта? </p>
+            <p><a href="#">Зарегистрируйтесь</a></p>
+            <a class="home" href="index.html">Главная страница</a>
+        </header>
+   </div>
+   <script src="scripts/scripts.js"></script>
 </body>
 
 </html>

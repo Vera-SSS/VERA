@@ -1,0 +1,36 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "Английский язык",
+        "duration": "3 месяца",
+        "level": "Начальный",
+        "price": 12000,
+        "link": "english.html"
+      },
+      {
+        "id": 2,
+        "title": "Французский язык",
+        "duration": "4 месяца",
+        "level": "Начальный",
+        "price": 15000,
+        "link": "french.html"
+      },
+      {
+        "id": 3,
+        "title": "Японский язык",
+        "duration": "6 месяцев",
+        "level": "Начальный",
+        "price": 18000,
+        "link": "japanese.html"
+      },
+      {
+        "id": 4,
+        "title": "Итальянский язык",
+        "duration": "3 месяца",
+        "level": "Начальный",
+        "price": 14000,
+        "link": "italian.html"
+      }
+    ]
+  }

@@ -7,61 +7,74 @@
     <title>Онлайн-курсы</title>
     <link rel="stylesheet" href="static/styles/style.css">
     <link rel="stylesheet" href="static/styles/normalize.css">
+    <link rel="stylesheet" href="static/styles/animation.css">
+    <link rel="stylesheet" href="static/styles/preloader.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header class="top">
-        <div class="log">
-            <img src="static/image/pngtree-cute-pink-rabbit-ear-headband-folded-ear-shape-png-image_7516079.png" alt="Логотип" width="150" height="110">
-        </div>
-        <div class="image">
-            <p>Rabbit Teacher</p>
-        </div>
-        <a class="but" href="registracia.html">Вход/Регистрация</a>
-    </header>
-    <main class="main">
-        <div class="warp">
-           <div class="description">
-        <p><span class="bold-text">Rabbit Teacher</span> — это онлайн-платформа для изучения английского, французкого, японского и итальянского языков. Мы предлагаем
-            интерактивные курсы с нуля. Учитесь в удобное время с
-            профессиональными преподавателями и носителями языка, практикуйте разговорную речь и погружайтесь в культуру
-            стран. Гибкий график, доступ к материалам 24/7 и индивидуальный подход помогут вам достичь целей: будь то
-            путешествия, карьера или экзамены. Начните с бесплатного пробного урока и откройте для себя мир без языковых
-            границ с Rabbit Teacher!</p>
-        </div>
-        <div class="slider">
-            <img id="sliderImage" src="static/image/5408955515230352428.jpg" alt="Картинка" />
-            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-            <button class="next" onclick="changeImage(1)">&#10095;</button>
-        </div> 
-        </div>
-    <div class="list">
-        <p>Каталог курсов</p>
-        <div class="catalog">
-            <button onclick="showPopup()">Английский язык</button>
-            <button onclick="showPopup()">Французкий язык</button>
-            <button onclick="showPopup()">Японский язык</button>
-            <button onclick="showPopup()">Итальянский язык</button>
+    <div class="preloader">
+        <div class="preloader__spinner">
+            <div class="preloader__animation"></div>
+            <div class="preloader__percents">0%</div>
         </div>
     </div>
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <p>Для записи на курс нужно сначала войти в свой профиль!</p>
-            <img src="static/image/pngtree-cute-pink-rabbit-ear-headband-folded-ear-shape-png-image_7516079.png" alt="Логотип" width="250" height="210">
+    <div class="content">
+        <header class="top">
+            <div class="log">
+                <img src="static/image/pngtree-cute-pink-rabbit-ear-headband-folded-ear-shape-png-image_7516079.png" alt="Логотип" width="150" height="110">
+            </div>
+            <div class="image">
+                <p>Rabbit Teacher</p>
+            </div>
+            <a class="but" href="registracia.html">Вход/Регистрация</a>
+        </header>
+        <main class="main">
+            <div class="warp">
+            <div class="description">
+            <p><span class="bold-text">Rabbit Teacher</span> — это онлайн-платформа для изучения английского, французкого, японского и итальянского языков. Мы предлагаем
+                интерактивные курсы с нуля. Учитесь в удобное время с
+                профессиональными преподавателями и носителями языка, практикуйте разговорную речь и погружайтесь в культуру
+                стран. Гибкий график, доступ к материалам 24/7 и индивидуальный подход помогут вам достичь целей: будь то
+                путешествия, карьера или экзамены. Начните с бесплатного пробного урока и откройте для себя мир без языковых
+                границ с Rabbit Teacher!</p>
+            </div>
+            
+            <div class="slider">
+                <img id="sliderImage" src="static/image/5408955515230352428.jpg" alt="Картинка" />
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div> 
+            </div>          
+        <div class="list">
+            <p>Каталог курсов</p>
+            <div class="catalog">
+                <button onclick="showPopup()">Английский язык</button>
+                <button onclick="showPopup()">Французкий язык</button>
+                <button onclick="showPopup()">Японский язык</button>
+                <button onclick="showPopup()">Итальянский язык</button>
+            </div>
         </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p>Для записи на курс нужно сначала войти в свой профиль!</p>
+                <img src="static/image/pngtree-cute-pink-rabbit-ear-headband-folded-ear-shape-png-image_7516079.png" alt="Логотип" width="250" height="210">
+            </div>
+        </div>
+        </main>
+        <footer class="footer">
+            <div class="contacts">
+            <p>Контакты/Техническая поддержка:</p>
+            <div class="icons">
+                <a class="icons__link" href="https://vk.com/" target="_blank">VK</a>
+                <a class="icons__link" href="https://www.whatsapp.com/?lang=ru_RU" target="_blank">WhatsApp</a>
+                <a class="icons__link" href="https://web.telegram.org/?F7807AED-3D26-4787-9BB1-EF948554571E_kes_cup_C6FA3ED5_6D17_47D1_B6E2_F4B02CC905E0_" target="_blank">Telegram</a>
+            </div>
+            </div>
+        </footer>
     </div>
-    </main>
-    <footer class="footer">
-        <div class="contacts">
-        <p>Контакты/Техническая поддержка:</p>
-        <div class="icons">
-            <a class="icons__link" href="https://vk.com/" target="_blank">VK</a>
-            <a class="icons__link" href="https://www.whatsapp.com/?lang=ru_RU" target="_blank">WhatsApp</a>
-            <a class="icons__link" href="https://web.telegram.org/?F7807AED-3D26-4787-9BB1-EF948554571E_kes_cup_C6FA3ED5_6D17_47D1_B6E2_F4B02CC905E0_" target="_blank">Telegram</a>
-        </div>
-        </div>
-    </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

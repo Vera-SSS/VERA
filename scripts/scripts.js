@@ -6,6 +6,45 @@ const images = [
     'static/image/5408955515230352430.jpg'
 ];
 
+document.addEventListener('DOMContentLoaded', function() {
+    const preloader = document.querySelector('.preloader');
+    const percents = document.querySelector('.preloader__percents');
+    const content = document.querySelector('.content');
+
+    if (!preloader || !percents) {
+        console.error('Не найдены элементы предзагрузчика!');
+        return;
+    }
+
+    setTimeout(() => {
+        content.style.opacity = '1';
+    }, 100);
+
+    let percent = 0;
+    const interval = setInterval(function() {
+        percent += 1;
+        percents.textContent = percent + '%';
+        
+        if (percent >= 100) {
+            clearInterval(interval);
+            setTimeout(function() {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+                document.body.style.overflow = 'auto';
+                preloader.classList.add('hidden'); 
+            }, 300);
+        }
+    }, 20);
+    
+    document.body.style.overflow = 'hidden';
+
+    const sliderImage = document.getElementById('sliderImage');
+    if (sliderImage && images.length > 0) {
+        sliderImage.src = images[currentIndex];
+    }
+
+});
+
 function changeImage(direction) {
     currentIndex += direction;
     if (currentIndex < 0) {
@@ -28,4 +67,4 @@ function showPopup() {
 function closePopup() {
     document.getElementById('popup').style.display = 'none'; 
 }
-
+;

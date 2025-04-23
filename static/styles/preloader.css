@@ -1,0 +1,50 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.preloader__spinner {
+    text-align: center;
+}
+
+.preloader__animation {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #ff66b2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+
+.preloader__percents {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ff66b2;
+}
+.preloader.hidden {
+    display: none;
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content.active {
+    opacity: 1;
+}
+
+.preloader.hide {
+    opacity: 0;
+    pointer-events: none;
+}

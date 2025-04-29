@@ -1,11 +1,3 @@
-let currentIndex = 0;
-const images = [
-    'static/image/5408955515230352428.jpg',
-    'static/image/5408955515230352429.jpg',
-    'static/image/5408955515230352431.jpg',
-    'static/image/5408955515230352430.jpg'
-];
-
 document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.querySelector('.preloader');
     const percents = document.querySelector('.preloader__percents');
@@ -38,22 +30,23 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.body.style.overflow = 'hidden';
 
-    const sliderImage = document.getElementById('sliderImage');
-    if (sliderImage && images.length > 0) {
-        sliderImage.src = images[currentIndex];
-    }
-
+    // Инициализация Swiper после загрузки страницы
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 });
-
-function changeImage(direction) {
-    currentIndex += direction;
-    if (currentIndex < 0) {
-        currentIndex = images.length - 1;
-    } else if (currentIndex >= images.length) {
-        currentIndex = 0;
-    }
-    document.getElementById('sliderImage').src = images[currentIndex];
-}
 
 // * начало
 // * Пользователь нажимает на кнопки главной страницы "Английский язык" и др
@@ -67,4 +60,3 @@ function showPopup() {
 function closePopup() {
     document.getElementById('popup').style.display = 'none'; 
 }
-;
